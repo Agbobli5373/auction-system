@@ -359,6 +359,14 @@ input {
     margin-top: 55px;
 }
 
+.GetStarted-btn:hover{
+    background-color: var(--accent-color);
+    color: #6855d3;
+    /* border: 1px solid #4D34E4; */
+    border-radius: 15px;
+    color: wheat;
+}
+
 
 @media screen and (min-width: 600px) {
 

@@ -127,7 +127,6 @@ input {
 
 
 .navbar {
-    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -157,7 +156,7 @@ input {
 .navbar a {
     /* font-weight: 400; */
     font-size: 1rem;
-    letter-spacing: 0.04em;
+    
 }
 
 #toggler,
@@ -250,8 +249,8 @@ form {
 
 .formContainer {
     margin: 0 auto;
-    width: 70%;
-    max-width: 600px;
+    width: 60%;
+  
 }
 
 .formContainer-signup {
@@ -262,14 +261,14 @@ form {
 
 .loginForm {
     font-family: var(--body-font-family);
-    margin: 30px 0;
+    margin: 10px 0;
     width: 100%;
 }
 
 .loginH1 {
     font-weight: 300;
-    font-size: 6rem;
-    margin: auto auto 53px auto;
+    font-size: 3rem;
+    margin: auto auto 13px auto;
     width: 100%;
 }
 
@@ -277,8 +276,7 @@ form {
     font-weight: 300;
     margin: 20px auto 50px auto;
     font-size: 5rem;
-    color: var(--accent-color);
-    letter-spacing: 0.01em;
+    color: var(--accent-color);    letter-spacing: 0.01em;
 }
 
 .loginH2-newProd {
@@ -288,9 +286,7 @@ form {
 }
 
 .formLable {
-    font-size: 1.6rem;
-    font-weight: 300;
-    letter-spacing: 0.03em;
+    font-size: 1.0rem;
     color: var(--dark-color-lighter);
 }
 
@@ -300,15 +296,13 @@ form {
 }
 
 .formInput {
-    width: 100%;
-    height: 90px;
-    font-weight: 400;
     background-color: var(--light-grey);
     opacity: 70%;
-    border-radius: 22px;
-    margin: 17px 0 23px 0;
-    padding-left: 30px;
-    font-size: 24px;
+    margin: 10px 0 13px 0;
+    padding-left: 10px;
+    font-size: 14px;
+    align-items: center;
+    height: 30px;
 }
 
 .form__same-billing-input {
@@ -322,8 +316,8 @@ form {
 .formInput-file__flex {
     display: flex;
     position: relative;
-    margin-top: 1.8rem;
-    margin-left: 2.2rem;
+    margin-top: 0.4rem;
+    margin-left: 1.2rem;
 }
 
 .formSection-image {
@@ -346,11 +340,10 @@ form {
 
 .formInput-file__container {
     width: 100%;
-    height: 90px;
-    font-weight: 400;
+    height: 50px;
+    font-weight: 100;
     background-color: var(--light-grey);
     opacity: 70%;
-    border-radius: 22px;
     margin: 17px 0 23px 0;
     /* padding-left: 30px; */
     font-size: 24px;
@@ -360,10 +353,9 @@ form {
     display: grid;
     width: 100%;
     /* height: 90px; */
-    font-weight: 400;
+    font-weight: 100;
     /* background-color: var(--light-grey); */
     opacity: 70%;
-    border-radius: 22px;
     /* padding-left: 30px; */
     margin-top: 10px;
 }
@@ -384,14 +376,15 @@ input[type="file"] {
 }
 
 .formSubmitButton {
-    width: 50%;
-    height: 59.93px;
-    margin: 64px auto 0 auto;
+    height: 30.93px;
+    margin: 24px auto 0 auto;
     background-color: var(--accent-color);
     color: var(--background-color);
     filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.25));
     border: 1px solid #4D34E4;
-    border-radius: 22px;
+    align-items: center;
+    text-align: center;
+
 }
 
 .new-prod-button {
@@ -475,8 +468,7 @@ input[type="file"] {
     .formInput {
         width: 100%;
         font-size: 16px;
-        height: 60px;
-        border-radius: 15px;
+        height: 20px;
     }
 
     .formInput-file__container {
@@ -488,8 +480,8 @@ input[type="file"] {
     .formInput-file__flex {
         display: flex;
         position: relative;
-        margin-top: 1.3rem;
-        margin-left: 2.2rem;
+        margin-top: 0.7rem;
+        margin-left: 1.2rem; 
     }
 
     .formInput-file__images-container {
@@ -504,8 +496,8 @@ input[type="file"] {
     }
 
     .loginH1 {
-        margin: 30px 0;
-        font-size: 4rem;
+        margin: 10px 0;
+        font-size: 2rem;
     }
 
     .loginH1-newProd {
@@ -522,14 +514,13 @@ input[type="file"] {
 
     .formContainer {
         margin: 0 auto;
-        width: 80%;
+        padding: 0;
     }
 
     .formContainer-signup {
         margin: 0 auto;
         padding-top: 0;
-        width: 80%;
-    }
+        width: 80%;    }
 
     .new-prod-button {
         width: 100%;
@@ -538,12 +529,12 @@ input[type="file"] {
         letter-spacing: 0.03em;
     }
 
-    .formSubmitButton {
+    /*.formSubmitButton {
         width: 50%;
         height: 59.93px;
         margin: 64px auto 0 auto;
         border-radius: 22px;
-    }
+    } */
 
 }
 

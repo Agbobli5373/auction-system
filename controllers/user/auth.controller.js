@@ -51,7 +51,7 @@ module.exports.registerUser = catchAsync(async (req, res) => {
     return res.redirect("/users/register");
   }
 
-  if (!validator.isMobilePhone(phoneNumber, "en-IN")) {
+  if (!validator.isMobilePhone(phoneNumber, "en-GH")) {
     await cloudinary.uploader.destroy(req.file.filename);
     req.flash("error", "Please enter a valid phone number");
     return res.redirect("/users/register");
@@ -87,7 +87,8 @@ module.exports.registerUser = catchAsync(async (req, res) => {
   }
 
   // Default role
-  const role = "ROLE_USER";
+ // const role = "ROLE_USER";
+  const role = "ROLE_ADMIN"
 
   // 6. Check if user exists with phone or email
   const existingUser = await User.findOne({

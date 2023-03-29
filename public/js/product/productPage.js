@@ -50,20 +50,20 @@ const validBidAmount = () => {
         case 1: 
             bidAmount.min = `${currentPrice + 1}`;
             quickBidInput.value = bidAmount.min;
-            displayQuickBid.placeholder = `₹ ${bidAmount.min} /-`;
+            displayQuickBid.placeholder = `₵ ${bidAmount.min} /-`;
             bidAmount.max = `${currentPrice * 2}`; 
             break;
         case 2: 
             bidAmount.min = `${currentPrice + 5}`;
             quickBidInput.value = bidAmount.min;
-            displayQuickBid.placeholder = `₹ ${bidAmount.min} /-`;
+            displayQuickBid.placeholder = `₵ ${bidAmount.min} /-`;
             bidAmount.max = `${currentPrice * 2}`; 
             break;
     }
     if(currentPriceLength > 2){
         bidAmount.min = currentPrice + Math.pow(10, currentPriceLength - 2);
         quickBidInput.value = bidAmount.min;
-        displayQuickBid.placeholder = `₹ ${bidAmount.min} /-`;
+        displayQuickBid.placeholder = `₵ ${bidAmount.min} /-`;
         bidAmount.max = currentPrice * 2;
     }
 }

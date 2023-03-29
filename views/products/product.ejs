@@ -22,7 +22,7 @@
         <h1 class="product__title-big"><%= product.title %></h1>
         <p class="product__body-big"><%= product.description %></p>
         <div class="wrapper-1">
-            <p class="current-price"> <span class="current-price__currency">&#8377;</span>
+            <p class="current-price"> <span class="current-price__currency">¢</span>
                 <%= product.currentHighestBid.amount || product.basePrice %> /-</p>
             <p class="countdown-timer" id="timer"></p>
         </div>
@@ -34,7 +34,7 @@
             <form id="form" action="/users/<%= product._id %>/bid" method="post">
                 <div id="error"></div>
                 <input id="bidAmount" class="formInput" type="number" min="<%= product.currentHighestBid.amount + 1 || product.basePrice + 1 %>"
-                name="amount" placeholder="&#8377;">
+                name="amount" placeholder="¢">
                 <!-- "&#8377; "> -->
                 <div class="place-bid">
                     <button class="place-bid_button" id="placeBid">Place Bid</button>

@@ -61,6 +61,7 @@ body {
     color: var(--dark-color);
     /* background: var(--background-color); */
     font-family: var(--body-font-family);
+    background-color: #EBEBEB;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -121,6 +122,8 @@ input {
     max-width: 2000px;
     padding-left: 15%;
     padding-right: 15%;
+    background-color: #FFFFFF;
+    margin-top: 5px ;
 }
 
 /* ----------------------Navbar Start------------------------- */
@@ -130,6 +133,7 @@ input {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    background-color: white;
     justify-content: space-between;
     padding-block: 5px;
 }
@@ -250,6 +254,7 @@ form {
 .formContainer {
     margin: 0 auto;
     width: 60%;
+    
   
 }
 
@@ -261,8 +266,9 @@ form {
 
 .loginForm {
     font-family: var(--body-font-family);
-    margin: 10px 0;
+    margin: 10px 3px;
     width: 100%;
+
 }
 
 .loginH1 {
@@ -275,7 +281,7 @@ form {
 .loginH1-newProd {
     font-weight: 300;
     margin: 20px auto 50px auto;
-    font-size: 5rem;
+    font-size: 2rem;
     color: var(--accent-color);    letter-spacing: 0.01em;
 }
 
@@ -493,6 +499,7 @@ input[type="file"] {
 
     .loginForm {
         margin: 0 auto;
+        padding: 3px;
     }
 
     .loginH1 {

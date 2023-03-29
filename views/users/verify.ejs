@@ -2,13 +2,13 @@
 <link rel="stylesheet" href="/css/styles.css" />
 
     <div class="formContainer">
-        <div class="loginForm">
+        <div class="loginForm p-5">
             <div class="loginH1-newProd"><%= title %></div>
                 
                 <form action="<%= action %>" method="POST">
                     <div class="formSection">
                         <label class="formLable" for="">Email</label>
-                        <input name="email" type="email" value="<%= currentUser?.email %>" class="formInput" id="email" />
+                        <input name="email" class="form-control" type="email" value="<%= currentUser?.email %>" class="formInput" id="email" />
                     </div>
                     <div class="fromSection">
                         <button type="submit" class="formSubmitButton">

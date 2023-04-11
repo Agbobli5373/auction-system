@@ -1,7 +1,7 @@
 <% layout('layouts/boilerplate') %>
 
 <link rel="stylesheet" href="/css/styles.css" />
-<div class="formContainer-signup container">
+<div class="formContainer-signup container rounded">
     <div class="loginForm p-5">
         <div class="loginH1">Sign Up</div>
         <form id="form" action="/users" method="POST" enctype="multipart/form-data">
@@ -9,15 +9,16 @@
             <div class="formGrid">
                 <div class="formSection">
                     <label class="formLable" for="firstName">First Name</label>
-                    <input type="text" name="firstName" class="formInput" id="firstName">
+                    <input type="text" name="firstName" class="form-control formInput" id="firstName">
                 </div>
+                
                 <div class="formSection">
                     <label class="formLable" for="lastName" class="">Last Name</label>
-                    <input type="text" name="lastName" class="formInput" id="lastName">
+                    <input type="text" name="lastName" class="form-control  formInput" id="lastName">
                 </div>
                 <div class="formSection">
                     <label class="formLable" for="email" class="">Email</label>
-                    <input type="email" name="email" class="formInput" id="email">
+                    <input type="email" name="email" class="form-control formInput" id="email">
                 </div>
                 <div class="formSection">
                     <label class="formLable" for="avatar" class="formInput">Profile Pic</label>
@@ -28,26 +29,26 @@
                             <div id="fileLabel" class="formInput-file__flex">Choose File</div>
                         </label>
                     </div>
-                    <input id="avatar" type="file" class="formInput-file" name="avatar" onchange="pressed()">
+                    <input id="avatar" type="file" class="form-control formInput-file" name="avatar" onchange="pressed()">
 
                 </div>
 
 
                 <div class="formSection">
                     <label class="formLable" for="dob" class="">DOB</label>
-                    <input type="date" name="dob" class="formInput" id="dob">
+                    <input type="date" name="dob" class="form-control formInput" id="dob">
                 </div>
                 <div class="formSection">
                     <label class="formLable" for="password" class="">Password</label>
-                    <input type="password" name="password" class="formInput" id="password">
+                    <input type="password" name="password" class="form-control formInput" id="password">
                 </div>
                 <div class="formSection">
                     <label class="formLable" for="phoneNumber" class="">Phone Number</label>
-                    <input type="text" name="phoneNumber" class="formInput" id="phoneNumber">
+                    <input type="text" name="phoneNumber" class="form-control formInput" id="phoneNumber">
                 </div>
             </div>
             <div class="formSection">
-                <button type="submit" class="formSubmitButton">Submit</button>
+                <button type="submit" class="form-control formSubmitButton">Submit</button>
             </div>
         </form>
 
@@ -55,4 +56,5 @@
         <!-- </div> -->
     </div>
 </div>
+<div style="height: 5px;"></div>
 <script src="/js/user/registerationPage.js"></script>

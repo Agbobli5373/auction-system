@@ -1,7 +1,7 @@
 <% layout('layouts/boilerplate') %>
 <link rel="stylesheet" href="/css/styles.css" />
 
-<div class="formContainer container mt-5">
+<div class="formContainer container mt-5 rounded">
   <div class="loginForm row d-flex justify-content-center  p-5">
     <div class="loginH1">Login</div>
     <form id="form" action="/users/login" method="POST">
@@ -17,7 +17,7 @@
           placeholder=""
           aria-describedby="helpId"
         />
-        <small id="helpId" class="text-muted">Help text</small>
+       
       </div>
       <div class="mb-3">
         <label for="" class="form-label">Password</label>
@@ -48,6 +48,7 @@
     </form>
   </div>
 </div>
+<div style="height: 5px;"></div>
 
 <script src="/js/user/loginPage.js"></script>
 

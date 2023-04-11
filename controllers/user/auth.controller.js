@@ -87,8 +87,8 @@ module.exports.registerUser = catchAsync(async (req, res) => {
   }
 
   // Default role
- // const role = "ROLE_USER";
-  const role = "ROLE_ADMIN"
+  const role = "ROLE_USER";
+  //const role = "ROLE_ADMIN"
 
   // 6. Check if user exists with phone or email
   const existingUser = await User.findOne({
